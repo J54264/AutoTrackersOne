@@ -12,7 +12,7 @@
 
 ### 整合的 Tracker 项目
 
-| 项目名称                        | 维护者       | 包含文件                      | 源仓库链接                                                                 |
+|     名称                        | 维护者       | 包含文件                      | 源链接                                                                     |
 |---------------------------------|--------------|------------------------------|---------------------------------------------------------------------------|
 | TrackersListCollection          | XIU2         | `best.txt`                   | [github.com/XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection) |
 | trackerslist                    | ngosang      | `trackers_best.txt`          | [github.com/ngosang/trackerslist](https://github.com/ngosang/trackerslist) |
@@ -33,13 +33,7 @@
 
 ## ⚠️ 声明
 
-本仓库内容通过 **AI 自动化流程** 生成，主要功能为：
-
-✅ 多源 Tracker 抓取  
-✅ 自动去重验证  
-✅ 格式标准化  
-
-**原始数据版权归属各源项目作者**，AI 生成内容遵循 [MIT License](LICENSE)。
+本仓库内容通过 AI 生成
 
 ---
 
