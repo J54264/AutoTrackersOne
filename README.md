@@ -1,31 +1,47 @@
-# Auto-Updated Trackers List 🚀
+# Auto Tracker List
 
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/J54264/AutoTrackersOne)](https://github.com/J54264/AutoTrackersOne)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/J54264/AutoTrackersOne/update.yml)
+[![Auto Update](https://img.shields.io/github/last-commit/J54264/AutoTrackersOne?label=Last%20Update)](https://github.com/J54264/AutoTrackersOne/commits)
+[![Trackers Count](https://img.shields.io/badge/Trackers-300+-blue)](tracker.txt)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-自动聚合 BitTorrent Trackers 列表，每日通过 GitHub Actions 更新。
+> 每日自动合并的 BitTorrent Tracker 列表
 
-## 📚 来源
+---
 
-| 项目名称 | 维护者 | 使用文件 | 地址 |
-|---------|--------|----------|----------|
-| **TrackersListCollection** | [XIU2] | `best.txt` | [github.com/XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection) |
-| **trackerslist** | [ngosang] | `trackers_best.txt`<br>`trackers_best_ip.txt` | [github.com/ngosang/trackerslist](https://github.com/ngosang/trackerslist) |
-| **itzmx.com** | [小樱] | `tracker.txt` | [github.itzmx.com](https://github.itzmx.com/1265578519/OpenTracker/master/tracker.txt) |
-****
-## ✨ 特性
+## 🔗 数据来源
 
-- **多源整合** - 聚合主流开源 Tracker 列表
-- **自动更新** - 每日 0 点自动合并最新数据
-- **自动过滤** - 自动去除重复项和无效条目
-****
-## 🤖 说明 
+### 整合的 Tracker 项目
 
-本仓库所有内容均由AI辅助生成，包括但不限于：  
-✅ 自动化更新逻辑  
-✅ 多源整合算法  
-✅ 文档描述文字  
-✅ 工作流配置  
-****
+| 项目名称                        | 维护者       | 包含文件                      | 源仓库链接                                                                 |
+|---------------------------------|--------------|------------------------------|---------------------------------------------------------------------------|
+| TrackersListCollection          | XIU2         | `best.txt`                   | [github.com/XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection) |
+| trackerslist                    | ngosang      | `trackers_best.txt`          | [github.com/ngosang/trackerslist](https://github.com/ngosang/trackerslist) |
+| trackerslist (IP 版)            | ngosang      | `trackers_best_ip.txt`       | [github.com/ngosang/trackerslist](https://github.com/ngosang/trackerslist) |
+| OpenTracker                     | 小樱 (itzmx) | `tracker.txt`                | [github.itzmx.com](https://github.itzmx.com/1265578519/OpenTracker)       |
+
+---
+
+## 📋 文件说明
+
+- `tracker.txt`  
+  每日自动生成的合并文件，包含去重后的有效 Tracker 地址
+
+- 更新频率：**每日 UTC 0 点**  
+- 最后更新：[查看最新版本](tracker.txt)
+
+---
+
+## ⚠️ 声明
+
+本仓库内容通过 **AI 自动化流程** 生成，主要功能为：
+
+✅ 多源 Tracker 抓取  
+✅ 自动去重验证  
+✅ 格式标准化  
+
+**原始数据版权归属各源项目作者**，AI 生成内容遵循 [MIT License](LICENSE)。
+
+---
+
 ### License
 The GPL-3.0 License.  
