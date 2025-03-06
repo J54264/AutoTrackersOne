@@ -67,7 +67,7 @@ jobs:
             # 写入文件
             with open("tracker.txt", "w") as f:
                 if sorted_wss:
-                    f.write("\n".join(sorted_wss) + "\n\n")
+                    f.write("\n".join(sorted_wss) + "\n")
                 f.write("\n".join(sorted_trackers))
 
         if __name__ == "__main__":
