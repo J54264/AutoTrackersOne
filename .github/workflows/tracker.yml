@@ -1,47 +1,84 @@
-- name: Run merge script
-  run: |
-    cat << 'EOF' > merge.py
-    import requests
-    import re
+name: Tracker Auto Merge
 
-    SOURCES = [
-        "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt",
-        "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt",
-        "https://cf.trackerslist.com/best.txt",
-        "https://github.itzmx.com/1265578519/OpenTracker/master/tracker.txt"
-    ]
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 0 点自动运行
+  workflow_dispatch:      # 允许手动触发
 
-    def process_trackers():
-        trackers = set()
+jobs:
+  merge-trackers:
+    runs-on: ubuntu-latest
 
-        for url in SOURCES:
-            try:
-                resp = requests.get(url, timeout=15)
-                resp.raise_for_status()
-                
-                for line in resp.text.splitlines():
-                    line = line.strip()
-                    if not line:
-                        continue
-                    
-                    # 统一校验协议，不区分类型
-                    if re.match(r'^(udp|http|https|wss|tcp)://', line):
-                        trackers.add(line)
-                    else:
-                        print(f"Ignoring invalid line: {line}")
-                        
-            except Exception as e:
-                print(f"Failed to fetch {url}: {str(e)}")
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
-        # 合并并统一排序
-        sorted_trackers = sorted(trackers)
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-        # 写入文件（无协议分类）
-        with open("tracker.txt", "w") as f:
-            f.write("\n".join(sorted_trackers))
+      - name: Install dependencies
+        run: pip install requests
 
-    if __name__ == "__main__":
-        process_trackers()
-    EOF
+      - name: Generate merge script
+        run: |
+          cat << 'EOF' > merge.py
+          import requests
+          import re
 
-    python merge.py
+          SOURCES = [
+              "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt",
+              "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt",
+              "https://cf.trackerslist.com/best.txt",
+              "https://github.itzmx.com/1265578519/OpenTracker/master/tracker.txt"
+          ]
+
+          def process_trackers():
+              trackers = set()
+
+              for url in SOURCES:
+                  try:
+                      resp = requests.get(url, timeout=15)
+                      resp.raise_for_status()
+                      
+                      for line in resp.text.splitlines():
+                          line = line.strip()
+                          if not line:
+                              continue
+                          
+                          if re.match(r'^(udp|http|https|wss|tcp)://', line):
+                              trackers.add(line)
+                          else:
+                              print(f"Ignoring invalid line: {line}")
+                              
+                  except Exception as e:
+                      print(f"Failed to fetch {url}: {str(e)}")
+
+              # 合并并统一排序
+              sorted_trackers = sorted(trackers)
+
+              # 写入文件
+              with open("tracker.txt", "w") as f:
+                  f.write("\n".join(sorted_trackers))
+
+          if __name__ == "__main__":
+              process_trackers()
+          EOF
+
+      - name: Run merge script
+        run: python merge.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Tracker Bot"
+          git config --global user.email "tracker-bot@users.noreply.github.com"
+          git add tracker.txt
+          git diff --cached --quiet || git commit -m "Auto Update: $(date +'%Y-%m-%d')"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
