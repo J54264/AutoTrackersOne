@@ -1,4 +1,3 @@
-wss://tracker.openwebtorrent.com:443/announce
 http://0123456789nonexistent.com:80/announce
 http://0d.kebhana.mx:443/announce
 http://1337.abcvg.info:80/announce
@@ -115,3 +114,4 @@ udp://tracker3.itzmx.com:6961/announce
 udp://tracker4.itzmx.com:2710/announce
 udp://ttk2.nbaonlineservice.com:6969/announce
 udp://udp.tracker.projectk.org:23333/announce
+wss://tracker.openwebtorrent.com:443/announce
