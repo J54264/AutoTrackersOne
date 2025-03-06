@@ -2,8 +2,8 @@ name: Tracker Auto Merge
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 0 点自动运行
-  workflow_dispatch:     # 允许手动触发
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   merge-trackers:
@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
+
+    - name: Install dependencies
+      run: pip install requests  # 新增依赖安装步骤
 
     - name: Run merge script
       run: |
@@ -37,7 +40,7 @@ jobs:
 
             for url in SOURCES:
                 try:
-                    resp = requests.get(url, timeout=10)
+                    resp = requests.get(url, timeout=15)  # 延长超时时间
                     resp.raise_for_status()
                     
                     for line in resp.text.splitlines():
@@ -45,11 +48,14 @@ jobs:
                         if not line:
                             continue
                         
-                        # 分离 wss:// 协议
-                        if line.startswith("wss://"):
-                            wss_trackers.add(line)
+                        # 增加更严格的协议校验
+                        if re.match(r'^(wss://|udp://|http://|https://|tcp://)', line):
+                            if line.startswith("wss://"):
+                                wss_trackers.add(line)
+                            else:
+                                trackers.add(line)
                         else:
-                            trackers.add(line)
+                            print(f"Ignoring invalid line: {line}")
                             
                 except Exception as e:
                     print(f"Failed to fetch {url}: {str(e)}")
@@ -58,7 +64,7 @@ jobs:
             sorted_trackers = sorted(trackers)
             sorted_wss = sorted(wss_trackers)
 
-            # 写入文件：wss 在前，其他在后
+            # 写入文件
             with open("tracker.txt", "w") as f:
                 if sorted_wss:
                     f.write("\n".join(sorted_wss) + "\n\n")
