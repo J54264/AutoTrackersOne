@@ -1,8 +1,8 @@
 # Auto Tracker List
 
 [![Auto Update](https://img.shields.io/github/last-commit/J54264/AutoTrackersOne?label=Last%20Update)](https://github.com/J54264/AutoTrackersOne/commits)
-[![Trackers Count](https://img.shields.io/badge/Trackers-300+-blue)](tracker.txt)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Trackers Count](https://img.shields.io/badge/Trackers-100+-blue)](tracker.txt)
+[![License](https://img.shields.io/badge/License-GPL-green)](LICENSE)
 
 > 每日自动合并的 BitTorrent Tracker 列表
 
