@@ -15,7 +15,7 @@
 |     名称                        | 维护者       | 包含文件                                             | 源链接                                                                     |
 |---------------------------------|--------------|-----------------------------------------------------|---------------------------------------------------------------------------|
 | TrackersListCollection          | XIU2         | `best.txt`                                          | [github.com/XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection) |
-| trackerslist                    | ngosang      | `trackers_best.txt`<br>-`trackers_best_ip.txt`      | [github.com/ngosang/trackerslist](https://github.com/ngosang/trackerslist) |
+| trackerslist                    | ngosang      | `trackers_best.txt`<br>`trackers_best_ip.txt`      | [github.com/ngosang/trackerslist](https://github.com/ngosang/trackerslist) |
 | OpenTracker                     | 小樱 (itzmx) | `tracker.txt`                                       | [github.itzmx.com](https://github.itzmx.com/1265578519/OpenTracker)         |
 
 ---
