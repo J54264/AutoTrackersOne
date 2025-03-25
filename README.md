@@ -26,7 +26,7 @@
   每日自动生成的合并文件，包含去重后的有效 Tracker 地址
 
 - 更新频率：**每日 UTC 0 点**  
-- 最后更新：[查看最新版本](tracker.txt)
+- 最后更新：[查看最新版本]([tracker.txt](https://raw.githubusercontent.com/J54264/AutoTrackersOne/refs/heads/main/tracker.txt))
 
 ---
 
