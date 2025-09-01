@@ -1,3 +1,4 @@
+http://0123456789nonexistent.com:80/announce
 http://1337.abcvg.info:80/announce
 http://207.241.226.111:6969/announce
 http://207.241.231.226:6969/announce
@@ -32,7 +33,6 @@ https://2.tracker.eu.org:443/announce
 https://3.tracker.eu.org:443/announce
 https://4.tracker.eu.org:443/announce
 https://tr.abiir.top:443/announce
-https://tr.abir.ga:443/announce
 https://tr.nyacat.pw:443/announce
 https://tracker.alaskantf.com:443/announce
 https://tracker.expli.top:443/announce
@@ -51,19 +51,19 @@ udp://1c.premierzal.ru:6969/announce
 udp://207.241.226.111:6969/announce
 udp://207.241.231.226:6969/announce
 udp://209.141.59.25:6969/announce
-udp://23.134.88.9:1337/announce
 udp://23.157.120.14:6969/announce
+udp://23.168.232.9:1337/announce
 udp://23.175.184.30:23333/announce
-udp://35.227.59.57:6969/announce
 udp://43.154.112.29:17272/announce
-udp://45.9.60.30:6969/announce
+udp://45.13.119.213:6969/announce
 udp://5.255.124.190:6969/announce
+udp://51.222.82.36:6969/announce
 udp://52.58.128.163:6969/announce
 udp://54.36.179.216:6969/announce
-udp://54.39.48.3:6969/announce
 udp://60.249.37.20:80/announce
 udp://6ahddutb1ucc3cp.ru:6969/announce
 udp://77.91.85.95:6969/announce
+udp://83.102.180.21:80/announce
 udp://89.110.76.229:6969/announce
 udp://93.158.213.92:1337/announce
 udp://94.136.190.183:1337/announce
@@ -103,6 +103,7 @@ udp://tracker.kmzs123.cn:17272/announce
 udp://tracker.ololosh.space:6969/announce
 udp://tracker.opentrackr.org:1337/announce
 udp://tracker.plx.im:6969/announce
+udp://tracker.qu.ax:6969/announce
 udp://tracker.rescuecrew7.com:1337/announce
 udp://tracker.skillindia.site:6969/announce
 udp://tracker.srv00.com:6969/announce
