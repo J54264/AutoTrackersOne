@@ -6,6 +6,7 @@ http://34.66.57.33:2710/announce
 http://64.226.122.118:6969/announce
 http://[2a04:ac00:1:3dd8::1:2710]:2710/announce
 http://bt1.archive.org:6969/announce
+http://bt2.archive.org:6969/announce
 http://bvarf.tracker.sh:2086/announce
 http://ipv6.rer.lol:6969/announce
 http://nyaa.tracker.wf:7777/announce
@@ -80,7 +81,6 @@ udp://open.stealth.si:80/announce
 udp://opentor.org:2710/announce
 udp://p4p.arenabg.com:1337/announce
 udp://retracker.hotplug.ru:2710/announce
-udp://seedpeer.net:6969/announce
 udp://t.overflow.biz:6969/announce
 udp://tracker-udp.gbitt.info:80/announce
 udp://tracker.004430.xyz:1337/announce
