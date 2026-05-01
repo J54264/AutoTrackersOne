@@ -11,17 +11,18 @@ http://34.66.57.33:80/announce.php
 http://95.217.167.10:6969/announce
 http://[2a04:ac00:1:3dd8::1:2710]:2710/announce
 http://bt1.archive.org:6969/announce
+http://bt2.archive.org:6969/announce
 http://nyaa.tracker.wf:7777/announce
 http://open.acgtracker.com:1096/announce
 http://retracker.hotplug.ru:2710/announce
 http://torrentsmd.com:8080/announce
 http://tracker.dhitechnical.com:6969/announce
 http://tracker.dler.com:6969/announce
-http://tracker.exe.in.th:6969/announce
 http://tracker.mywaifu.best:6969/announce
 http://tracker.opentrackr.org:1337/announce
 http://tracker.renfei.net:8080/announce
 http://tracker.skyts.net:6969/announce
+http://tracker.xn--djrq4gl4hvoi.top:80/announce
 http://tracker1.itzmx.com:8080/announce
 http://tracker2.dler.org/announce
 http://tracker2.itzmx.com:6961/announce
@@ -37,7 +38,6 @@ https://shahidrazi.online:443/announce
 https://t.213891.xyz:443/announce
 https://torrents.tmtime.dev:443/announce
 https://tr.abiir.top:443/announce
-https://tr.abir.ga:443/announce
 https://tr.nyacat.pw:443/announce
 https://tracker.7471.top:443/announce
 https://tracker.bt4g.com:443/announce
