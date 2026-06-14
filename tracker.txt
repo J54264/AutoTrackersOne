@@ -1,5 +1,4 @@
 http://1337.abcvg.info:80/announce
-http://167.253.78.20:8080/announce
 http://207.241.226.111:6969/announce
 http://207.241.231.226:6969/announce
 http://95.217.167.10:6969/announce
@@ -20,8 +19,8 @@ http://tracker.opentrackr.org:1337/announce
 http://tracker.plx.im:6969/announce
 http://tracker.renfei.net:8080/announce
 http://tracker.skyts.net:6969/announce
-http://tracker.tritan.gg:8080/announce
 http://tracker.waaa.moe:6969/announce
+http://tracker.xn--djrq4gl4hvoi.top:80/announce
 http://tracker1.itzmx.com:8080/announce
 http://tracker2.dler.org/announce
 http://tracker2.itzmx.com:6961/announce
@@ -33,9 +32,11 @@ https://021912.xyz:443/announce
 https://1337.abcvg.info:443/announce
 https://banananetwork.qzz.io:443/announce
 https://orgtgju.org:443/announce
+https://shahidrazi.online:443/announce
 https://t.213891.xyz:443/announce
 https://torrents.tmtime.dev:443/announce
 https://tr.abiir.top:443/announce
+https://tr.abir.ga:443/announce
 https://tr.nyacat.pw:443/announce
 https://tracker.7471.top:443/announce
 https://tracker.anibt.net:443/announce
@@ -54,7 +55,7 @@ udp://185.121.168.96:1337/announce
 udp://185.243.218.213:80/announce
 udp://192.3.130.53:1337/announce
 udp://200.168.116.191:6969/announce
-udp://211.75.210.221:6969/announce
+udp://211.75.205.189:6969/announce
 udp://23.157.120.14:6969/announce
 udp://34.66.57.33:1337/announce
 udp://34.66.57.33:80/announce
@@ -63,6 +64,7 @@ udp://44.30.4.4:6969/announce
 udp://5.135.104.146:6969/announce
 udp://52.58.128.163:6969/announce
 udp://83.102.180.21:80/announce
+udp://87.106.210.134:6969/announce
 udp://89.234.156.205:451/announce
 udp://93.158.213.92:1337/announce
 udp://93.158.213.92:6969/announce
@@ -73,11 +75,9 @@ udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce
 udp://coeus.torrentonline.cc:42069/announce
 udp://evan.im:6969/announce
 udp://exodus.desync.com:6969/announce
-udp://explodie.org:6969/announce
 udp://martin-gebhardt.eu:25/announce
 udp://ns575949.ip-51-222-82.net:6969/announce
 udp://open.demonii.com:1337/announce
-udp://open.demonoid.ch:6969/announce
 udp://open.ftorrent.com:443/announce
 udp://open.stealth.si:80/announce
 udp://open.tracker.ink:6969/announce
@@ -88,6 +88,7 @@ udp://retracker01-msk-virt.corbina.net:80/announce
 udp://seedpeer.net:6969/announce
 udp://t.overflow.biz:6969/announce
 udp://torrentclub.online:54123/announce
+udp://torrents.tmtime.dev:6969/announce
 udp://tracker-udp.gbitt.info:80/announce
 udp://tracker.004430.xyz:1337/announce
 udp://tracker.aruku.ovh:8081/announce
