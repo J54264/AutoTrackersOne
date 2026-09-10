@@ -19,7 +19,6 @@ http://retracker01-msk-virt.corbina.net/announce
 http://torrentsmd.com:8080/announce
 http://tracker.dhitechnical.com:6969/announce
 http://tracker.dler.com:6969/announce
-http://tracker.mywaifu.best:6969/announce
 http://tracker.opentorrent.top:6969/announce
 http://tracker.opentrackr.org:1337/announce
 http://tracker.plx.im:6969/announce
