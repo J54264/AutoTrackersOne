@@ -1,10 +1,9 @@
 http://107.189.2.131:1337/announce
 http://132.243.161.144:6969/announce
 http://1337.abcvg.info:80/announce
-http://135.125.198.235:2710/announce
 http://207.241.226.111:6969/announce
 http://207.241.231.226:6969/announce
-http://211.75.205.188:6969/announce
+http://211.75.210.221:6969/announce
 http://[2605:6400:30:fad6::dead:c0d3]:1337/announce
 http://[2a04:ac00:1:3dd8::1:2710]:2710/announce
 http://announce.sktorrent.eu:6969/announce
@@ -18,12 +17,10 @@ http://retracker01-msk-virt.corbina.net/announce
 http://torrentsmd.com:8080/announce
 http://tracker.dhitechnical.com:6969/announce
 http://tracker.dler.com:6969/announce
-http://tracker.dler.org:6969/announce
 http://tracker.mywaifu.best:6969/announce
 http://tracker.opentorrent.top:6969/announce
 http://tracker.opentrackr.org:1337/announce
 http://tracker.plx.im:6969/announce
-http://tracker.privateseedbox.xyz:2710/announce
 http://tracker.renfei.net:8080/announce
 http://tracker.therarbg.to:6969/announce
 http://tracker.waaa.moe:6969/announce
@@ -53,10 +50,9 @@ udp://109.201.134.183:80/announce
 udp://135.125.198.235:1984/announce
 udp://151.242.104.187:80/announce
 udp://185.121.168.96:1337/announce
-udp://189.18.97.61:6969/announce
-udp://208.83.20.20:6969/announce
-udp://209.141.59.25:6969/announce
-udp://211.75.205.187:80/announce
+udp://200.168.117.238:6969/announce
+udp://211.75.205.188:80/announce
+udp://211.75.210.221:6969/announce
 udp://23.153.248.128:6969/announce
 udp://23.157.120.14:6969/announce
 udp://31.56.179.159:6969/announce
@@ -65,10 +61,12 @@ udp://34.66.57.33:80/announce
 udp://43.250.54.126:6969/announce
 udp://52.58.128.163:6969/announce
 udp://65.109.28.17:6969/announce
-udp://83.102.180.21:80/announce
+udp://65.109.28.33:6969/announce
 udp://89.234.156.205:451/announce
 udp://93.158.213.92:1337/announce
 udp://93.158.213.92:6969/announce
+udp://95.217.80.20:6969/announce
+udp://95.217.80.22:6969/announce
 udp://[2a03:7220:8083:cd00::1]:451/announce
 udp://[2a04:ac00:1:3dd8::1:2710]:2710/announce
 udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce
@@ -86,7 +84,6 @@ udp://open.tracker.ink:6969/announce
 udp://opentor.org:2710/announce
 udp://p4p.arenabg.com:1337/announce
 udp://retracker.hotplug.ru:2710/announce
-udp://retracker01-msk-virt.corbina.net:80/announce
 udp://t.overflow.biz:6969/announce
 udp://torrent.tracker.durukanbal.com:6969/announce
 udp://tr3.ysagin.top:2715/announce
@@ -99,6 +96,7 @@ udp://tracker.breizh.pm:6969/announce
 udp://tracker.cn.nyaa.net:6969/announce
 udp://tracker.corpscorp.online:80/announce
 udp://tracker.dler.com:6969/announce
+udp://tracker.dler.org:6969/announce
 udp://tracker.ducks.party:1984/announce
 udp://tracker.farted.net:6969/announce
 udp://tracker.filemail.com:6969/announce
@@ -115,7 +113,6 @@ udp://tracker.qu.ax:6969/announce
 udp://tracker.skyts.net:6969/announce
 udp://tracker.teambelgium.net:6969/announce
 udp://tracker.torrent.eu.org:451/announce
-udp://tracker.tryhackx.org:6969/announce
 udp://tracker1.itzmx.com:8080/announce
 udp://tracker2.dler.org:80/announce
 udp://tracker2.itzmx.com:6961/announce
